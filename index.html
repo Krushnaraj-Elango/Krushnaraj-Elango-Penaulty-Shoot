@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laliga League</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="row"> 
+            <div class="col"> 
+                <img src="assests/Barcelona-Logo.jpeg" class="pic" alt="FC Barcelona" width="150px" height="150px"> 
+                <p class="name">FC Barcelona</p> 
+                <div class="row goals" id="team1goals"> 
+                    <div id="circle"></div> 
+                    <div id="circle"></div> 
+                    <div id="circle"></div> 
+                    <div id="circle"></div> 
+                    <div id="circle"></div> 
+                </div> 
+            </div> 
+            <div class ="col">
+            <div class="row score"> 
+                <div id="team1score">0</div>
+                <div>-</div>
+                <div id="team2score">0</div>
+            </div>
+            </div> 
+                <div class="col"> 
+                    <img src="assests/Real-Madrid.png" class="pic" alt="Real Madrid" width="150px" height="150px"> 
+                    <p class="name">Real Madrid</p> 
+                    <div class="row goals" id="team2goals"> 
+                        <div id="circle"></div> 
+                        <div id="circle"></div> 
+                        <div id="circle"></div> 
+                        <div id="circle"></div> 
+                        <div id="circle"></div> 
+                    </div> 
+                </div>
+            </div>
+            <div class = "row"> 
+                <button id="try" onclick="refresh()">Try Again</button>
+                <button id="strike" onclick="handleStrike()">Strike</button> 
+            </div> 
+            <div id="result"></div>
+        </div>
+        <script src="app.js"></script>
+</body>
+</html>
